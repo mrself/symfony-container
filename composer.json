@@ -1,0 +1,32 @@
+{
+    "name": "mrself/symfony-container",
+    "type": "project",
+    "license": "MIT",
+    "description": "A package for intergrating mrself/container with symfony",
+    "require": {
+        "php": "^7.2.0",
+        "mrself/container": "^1.5.4"
+    },
+    "require-dev": {
+        "doctrine/dbal": "^2.9",
+        "doctrine/orm": "^2.6",
+        "phpunit/phpunit": "^8.3",
+        "symfony/dependency-injection": "^4.3"
+    },
+    "config": {
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Mrself\\SFContainer\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mrself\\SFContainer\\Tests\\": "tests/"
+        }
+    }
+}
