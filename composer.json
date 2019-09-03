@@ -5,7 +5,7 @@
     "description": "A package for intergrating mrself/container with symfony",
     "require": {
         "php": "^7.2.0",
-        "mrself/container": "^1.5.4"
+        "mrself/container": "^1.7"
     },
     "require-dev": {
         "doctrine/dbal": "^2.9",
