@@ -14,6 +14,10 @@ class SFContainerBundle extends Bundle
      */
     public function boot()
     {
+        if (ContainerRegistry::has('App')) {
+            return;
+        }
+
         $symfonyContainer = $this->container;
         $appContainer = SymfonyContainer::make();
         $appContainer->setSymfonyContainer($symfonyContainer);
